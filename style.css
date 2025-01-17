@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.main {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+
+    font-family: 'Lato', sans-serif;
+    background-color: #480ca8;
+}
+
+.calculator {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0 15px;
+}
+
+.calculator__title{
+    font-size: 5rem;
+    text-align: center;
+    color: #000;
+    text-shadow: 0 0 10px #b4d7ff;
+
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.form__height label, .form__weight label{
+    font-size: 2.5rem;
+    color: #000;
+    text-shadow: 0 0 10px #b4d7ff;
+}
+
+.form__height input, .form__weight input{
+    font-size: 2.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #b4d7ff;
+    width: 100%;
+
+}
+
+.form__height input:focus, .form__weight input:focus{
+    box-shadow: 0 0 40px #00d3ff;
+}
+
+.form__height, .form__weight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+}
+
+.form__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.form__buttons button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #b4d7ff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form__buttons button:hover {
+    box-shadow: 0 0 40px #00d3ff;
+}
+
+.result__bmi{
+    text-align: center;
+}
+
+.bmi__text{
+    font-size: 3rem;
+    color: #000;
+    text-shadow: 0 0 10px #b4d7ff;
+    font-weight: 900;
+}
+
+@media (max-width: 600px) {
+    .calculator__title{
+        font-size: 4rem;
+        letter-spacing: 5px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .form{
+        gap: 2rem;
+    }
+    .calculator__title{
+        font-size: 3rem;
+    }
+    .form__height input, .form__weight input{
+        font-size: 2rem;
+    }
+    .form__buttons button {
+        font-size: 1.5rem;
+    }
+    .form__height label, .form__weight label{
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+}
+@media (max-width: 375px) {
+    .calculator__title{
+        font-size: 2.5rem;
+    }
+    .form__height input, .form__weight input{
+        font-size: 1.5rem;
+    }
+    .bmi__text{
+        font-size: 2rem;
+
+    }
+}
